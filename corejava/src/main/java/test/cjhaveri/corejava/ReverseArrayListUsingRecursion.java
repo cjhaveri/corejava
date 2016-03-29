@@ -1,6 +1,5 @@
 package test.cjhaveri.corejava;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,10 +20,18 @@ public class ReverseArrayListUsingRecursion {
 	 *            the reversed list
 	 */
 	public void reverse(List<Object> toReverse, List<Object> reversedList) {
+		
+		//safety check for null on the reversed list
+		if (reversedList == null) {
+			throw new IllegalArgumentException("Target list should be populated");
+		}
+		
 		// if there's nothing to reverse then return
 		if (toReverse == null || toReverse.isEmpty()) {
 			return;
 		}
+	
+		
 		// add the last item to the reversed list
 		reversedList.add(toReverse.get(toReverse.size() - 1));
 		// recursively call to reverse the rest of the list
