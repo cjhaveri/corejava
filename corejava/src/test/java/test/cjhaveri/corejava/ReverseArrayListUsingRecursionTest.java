@@ -48,7 +48,25 @@ public class ReverseArrayListUsingRecursionTest {
 			Assert.assertEquals(output.size(), 0, "Size expected to be zero");
 		}
 	}
-	
+
+	@Test(dataProvider = "testData")
+	public void testReverse2(List<Object> input, List<Object> expectedOutput) {
+		ReverseArrayListUsingRecursion object = new ReverseArrayListUsingRecursion();
+		// create an empty list to pass through
+		List<Object> output = null;
+		// method call
+		output = object.reverse(input);
+		if (input != null && output != null) {
+			// verify the sizes
+			Assert.assertEquals(output.size(), input.size(), "Sizes of input and output should match");
+			// verify the contents
+			Assert.assertEquals(output, expectedOutput);
+		} else if (input == null) {
+			// verify when output is null
+			Assert.assertNull(output, "Output expected to be zero");
+		}
+	}
+
 	@Test
 	public void testReverseExceptionHandling() {
 		ReverseArrayListUsingRecursion object = new ReverseArrayListUsingRecursion();
@@ -57,10 +75,9 @@ public class ReverseArrayListUsingRecursionTest {
 			Assert.fail("Exception should have been thrown!");
 		} catch (Exception e) {
 			Assert.assertTrue(e instanceof IllegalArgumentException);
-		
+
 		}
 	}
-	
 
 	/**
 	 * Test class to verify that object handling is fine
