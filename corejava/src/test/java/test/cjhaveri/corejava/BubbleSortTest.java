@@ -6,14 +6,15 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class QuickSortTest extends SortTestBase {
+public class BubbleSortTest extends SortTestBase {
 	
 	@Test (invocationCount = 100)
 	public void testQuickSort() {
 		Integer[] numbers = createRandomNumberArrays();
 		//the test
-		QuickSort qs = new QuickSort();
-		Integer[] sortedNumbers = qs.quickSort(numbers);
+		BubbleSort bs = new BubbleSort();
+		Integer[] sortedNumbers = bs.bubbleSort(numbers);
+		bs.printNumberOfOperations();
 		Arrays.sort(numbers);
 		Assert.assertEquals(Arrays.toString(sortedNumbers), Arrays.toString(numbers));
 	}
@@ -22,8 +23,8 @@ public class QuickSortTest extends SortTestBase {
 	public void testQuickSortWithNullNumbers() {
 		Integer[] numbers = null;
 		//the test
-		QuickSort qs = new QuickSort();
-		Integer[] sortedNumbers = qs.quickSort(numbers);
+		BubbleSort bs = new BubbleSort();
+		Integer[] sortedNumbers = bs.bubbleSort(numbers);
 		Assert.assertEquals(Arrays.toString(sortedNumbers), Arrays.toString(numbers));
 	}
 

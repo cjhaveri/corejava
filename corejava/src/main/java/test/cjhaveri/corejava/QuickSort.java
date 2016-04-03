@@ -1,24 +1,9 @@
 package test.cjhaveri.corejava;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class QuickSort {
-
-	private int numberOfOperations = 0;
-
-	public void printArray(Integer[] numbers) {
-		System.out.println("Array size: " + numbers.length + ", Current Array: " + Arrays.toString(numbers));
-	}
-
-	public void printNumberOfOperations() {
-		System.out.println("Number of operations: " + numberOfOperations);
-	}
-
-	private void printPivot(int pivotNumber, Integer[] numbers) {
-		System.out.println("Picked pivot as: " + pivotNumber + ", in Array: " + Arrays.toString(numbers));
-	}
+public class QuickSort extends SortBase {
 
 	public Integer[] quickSort(Integer[] numbers) {
 
