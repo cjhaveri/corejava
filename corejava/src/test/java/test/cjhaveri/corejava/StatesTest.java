@@ -14,17 +14,17 @@ public class StatesTest {
 	public Object[][] testData() {
 		return new Object[][] {
 				// size = 4 (even)
-				{ 2, Arrays.asList(new String[] { "CA", "TX", "NH", "IN" }),
-						Arrays.asList(new String[] { "CA", "NH" }), },
+				{ 2, Arrays.asList("CA", "TX", "NH", "IN"),
+						Arrays.asList("CA", "NH"), },
 				// size = 3 (odd)
-				{ 1, Arrays.asList(new String[] { "CA", "TX", "NH" }),
-						Arrays.asList(new String[] { "CA", "TX", "NH" }) },
+				{ 1, Arrays.asList("CA", "TX", "NH"),
+						Arrays.asList("CA", "TX", "NH") },
 				// // size = 1
-				{ 5, Arrays.asList(new String[] { "CA" }), Arrays.asList(new String[] { "CA" }) },
+				{ 5, Arrays.asList("CA"), Arrays.asList("CA") },
 				// null
-				{ 1, null, Arrays.asList(new String[] {}) },
+				{ 1, null, Arrays.asList() },
 				// empty
-				{ 1, Arrays.asList(new String[] {}), Arrays.asList(new String[] {}) }
+				{ 1, Arrays.asList(), Arrays.asList() }
 
 		};
 	}

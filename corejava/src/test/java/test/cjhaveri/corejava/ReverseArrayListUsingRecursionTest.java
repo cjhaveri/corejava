@@ -14,19 +14,19 @@ public class ReverseArrayListUsingRecursionTest {
 	public Object[][] testData() {
 		return new Object[][] {
 				// size = 4 (even)
-				{ Arrays.asList(new String[] { "CA", "TX", "NH", "IN" }),
-						Arrays.asList(new String[] { "IN", "NH", "TX", "CA" }) },
+				{ Arrays.asList("CA", "TX", "NH", "IN"),
+						Arrays.asList("IN", "NH", "TX", "CA") },
 				// size = 3 (odd)
-				{ Arrays.asList(new String[] { "CA", "TX", "NH" }), Arrays.asList(new String[] { "NH", "TX", "CA" }) },
+				{ Arrays.asList("CA", "TX", "NH"), Arrays.asList("NH", "TX", "CA") },
 				// size = 1
-				{ Arrays.asList(new String[] { "CA" }), Arrays.asList(new String[] { "CA" }) },
+				{ Arrays.asList("CA"), Arrays.asList("CA") },
 				// null
 				{ null, null },
 				// empty
-				{ Arrays.asList(new String[] {}), Arrays.asList(new String[] {}) },
+				{ Arrays.asList(), Arrays.asList() },
 				// list of objects
-				{ Arrays.asList(new ZipCode[] { new ZipCode(94538, 7004), new ZipCode(94555, 7909) }),
-						Arrays.asList(new ZipCode[] { new ZipCode(94555, 7909), new ZipCode(94538, 7004) }) }
+				{ Arrays.asList(new ZipCode(94538, 7004), new ZipCode(94555, 7909)),
+						Arrays.asList(new ZipCode(94555, 7909), new ZipCode(94538, 7004)) }
 
 		};
 	}
@@ -134,9 +134,7 @@ public class ReverseArrayListUsingRecursionTest {
 				return false;
 			if (firstFive != other.firstFive)
 				return false;
-			if (lastFour != other.lastFour)
-				return false;
-			return true;
+			return lastFour == other.lastFour;
 		}
 
 		private ReverseArrayListUsingRecursionTest getOuterType() {
