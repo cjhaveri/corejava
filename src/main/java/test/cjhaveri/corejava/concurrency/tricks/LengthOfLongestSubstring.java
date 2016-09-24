@@ -1,6 +1,5 @@
 package test.cjhaveri.corejava.concurrency.tricks;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -37,6 +36,7 @@ public class LengthOfLongestSubstring {
                 //clear out memory
                 uniqueCharacters.clear();
             }
+
             uniqueCharacters.add(currentCharacter);
             currentLength++;
         }
