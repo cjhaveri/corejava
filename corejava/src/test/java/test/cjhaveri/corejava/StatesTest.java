@@ -7,6 +7,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import test.cjhaveri.corejava.concurrency.States;
 
 public class StatesTest {
 

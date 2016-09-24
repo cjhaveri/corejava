@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
+import test.cjhaveri.corejava.sort.SelectionSort;
 
 public class SelectionSortTest extends SortTestBase {
 

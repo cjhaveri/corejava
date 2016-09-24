@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.sort;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

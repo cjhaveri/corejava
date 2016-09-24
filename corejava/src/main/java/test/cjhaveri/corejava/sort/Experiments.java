@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.sort;
 
 import java.nio.charset.Charset;
 
