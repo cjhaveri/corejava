@@ -19,7 +19,8 @@ public class LengthOfLongestSubstringTest {
                 {"abcabcdef", 6},
                 {"pwwkew", 3},
                 {"bbbbb", 1},
-                {"abcabcbb", 3}
+                {"abcabcbb", 3},
+                {null,0}
         };
     }
 
