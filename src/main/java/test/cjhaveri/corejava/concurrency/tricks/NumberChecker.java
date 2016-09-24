@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.tricks;
+package test.cjhaveri.corejava.concurrency.tricks;
 
 /**
  * Created by chetanjhaveri on 9/23/16.

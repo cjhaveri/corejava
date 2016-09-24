@@ -1,20 +1,20 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.sort;
 
 import java.util.Arrays;
 
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import test.cjhaveri.corejava.sort.SelectionSort;
+import test.cjhaveri.corejava.concurrency.sort.QuickSort;
 
-public class SelectionSortTest extends SortTestBase {
-
+public class QuickSortTest extends SortTestBase {
+	
 	@Test (invocationCount = 100)
 	public void testQuickSort() {
 		Integer[] numbers = createRandomNumberArrays();
 		//the test
-		SelectionSort ss = new SelectionSort();
-		Integer[] sortedNumbers = ss.selectionSort(numbers);
+		QuickSort qs = new QuickSort();
+		Integer[] sortedNumbers = qs.quickSort(numbers);
 		Arrays.sort(numbers);
 		Assert.assertEquals(Arrays.toString(sortedNumbers), Arrays.toString(numbers));
 	}
@@ -23,9 +23,9 @@ public class SelectionSortTest extends SortTestBase {
 	public void testQuickSortWithNullNumbers() {
 		Integer[] numbers = null;
 		//the test
-		SelectionSort ss = new SelectionSort();
-		Integer[] sortedNumbers = ss.selectionSort(numbers);
+		QuickSort qs = new QuickSort();
+		Integer[] sortedNumbers = qs.quickSort(numbers);
 		Assert.assertEquals(Arrays.toString(sortedNumbers), Arrays.toString(numbers));
 	}
-	
+
 }

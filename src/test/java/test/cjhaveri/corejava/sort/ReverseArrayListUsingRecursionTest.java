@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import test.cjhaveri.corejava.sort.ReverseArrayListUsingRecursion;
+import test.cjhaveri.corejava.concurrency.sort.ReverseArrayListUsingRecursion;
 
 public class ReverseArrayListUsingRecursionTest {
 

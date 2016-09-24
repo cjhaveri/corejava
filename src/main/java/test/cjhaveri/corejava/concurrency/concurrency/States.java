@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency;
+package test.cjhaveri.corejava.concurrency.concurrency;
 
 import java.util.Iterator;
 import java.util.List;

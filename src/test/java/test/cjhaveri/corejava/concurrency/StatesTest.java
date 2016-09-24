@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.concurrency;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import test.cjhaveri.corejava.concurrency.States;
+import test.cjhaveri.corejava.concurrency.concurrency.States;
 
 public class StatesTest {
 

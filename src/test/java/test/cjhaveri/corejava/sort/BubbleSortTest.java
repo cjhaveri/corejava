@@ -1,11 +1,11 @@
-package test.cjhaveri.corejava;
+package test.cjhaveri.corejava.sort;
 
 import java.util.Arrays;
 
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import test.cjhaveri.corejava.sort.BubbleSort;
+import test.cjhaveri.corejava.concurrency.sort.BubbleSort;
 
 public class BubbleSortTest extends SortTestBase {
 	

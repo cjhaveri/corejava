@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency;
+package test.cjhaveri.corejava.concurrency.concurrency;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -33,7 +33,7 @@ public class ExecutorTest implements Callable<States> {
             System.out.println("Submitting invocation: " + i);
             executorService.submit(new ExecutorTest(states, i));
         }
-        executorService.shutdown();
+//        executorService.shutdown();
     }
 
 
