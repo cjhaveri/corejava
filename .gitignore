@@ -4,3 +4,6 @@ test-output
 .project
 .classpath
 *.iml
+*~
+.DS_Store
+output.txt
