@@ -5,7 +5,6 @@ import java.util.Arrays;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import test.cjhaveri.corejava.concurrency.sort.QuickSort;
 
 public class QuickSortTest extends SortTestBase {
 	

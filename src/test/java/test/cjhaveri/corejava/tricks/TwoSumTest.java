@@ -1,17 +1,14 @@
-package test.cjhaveri.corejava.concurrency.tricks;
+package test.cjhaveri.corejava.tricks;
 
 import junit.framework.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-
-import static org.testng.Assert.*;
-
 /**
  * Created by chetanjhaveri on 9/24/16.
  */
 public class TwoSumTest {
+
 
     @DataProvider
     public Object[][] testData() {
@@ -43,26 +40,7 @@ public class TwoSumTest {
 
     private boolean sameArrays(int[] a, int[] b) {
 
-        if (a == null && b == null) {
-            return true;
-        } else if (a == null && b != null) {
-            return false;
-        } else if (a != null && b == null) {
-            return false;
-        } else if (a.length != b.length) {
-            return false;
-        }
-        Arrays.sort(a);
-        Arrays.sort(b);
-
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] != b[i]) {
-                return false;
-            }
-        }
-
-        return true;
-
+        return ArrayUtil.sameArrays(a, b);
     }
 
     @Test (dataProvider = "testData")

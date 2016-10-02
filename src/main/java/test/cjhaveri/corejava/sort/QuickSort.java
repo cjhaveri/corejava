@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency.sort;
+package test.cjhaveri.corejava.sort;
 
 import java.util.ArrayList;
 import java.util.List;

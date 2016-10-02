@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency.sort;
+package test.cjhaveri.corejava.sort;
 
 import java.nio.charset.Charset;
 

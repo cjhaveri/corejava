@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency.tricks;
+package test.cjhaveri.corejava.tricks;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/

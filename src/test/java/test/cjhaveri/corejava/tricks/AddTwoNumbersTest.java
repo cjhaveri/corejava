@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency.tricks;
+package test.cjhaveri.corejava.tricks;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

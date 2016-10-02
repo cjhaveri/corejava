@@ -1,4 +1,4 @@
-package test.cjhaveri.corejava.concurrency.tricks;
+package test.cjhaveri.corejava.tricks;
 
 import java.util.HashMap;
 
