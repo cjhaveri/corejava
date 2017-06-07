@@ -13,7 +13,7 @@ public class LinkingBlockingQueueExample {
 
     public static void main(String[] args) {
 
-        LinkedBlockingDeque<Job> queue = new LinkedBlockingDeque<>(10);
+        LinkedBlockingDeque<Job> queue = new LinkedBlockingDeque<>(20);
 
         Consumer [] consumers = new Consumer[4] ;
 

@@ -15,11 +15,12 @@ public class Producer extends Thread{
 
     @Override
     public void run() {
-        for (int i=0; i < 10; i++) {
+        for (int i=0; i < 20; i++) {
             Job producing = new Job();
             try {
 
                 queue.put(producing);
+                System.out.println("put number " + i + " in queue");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
