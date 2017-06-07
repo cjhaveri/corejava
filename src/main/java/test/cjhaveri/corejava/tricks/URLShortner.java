@@ -46,9 +46,6 @@ public class URLShortner {
                 //get original digit
                 System.out.println("original string is at " + originalNumberStringFormat.substring(7,8));
 
-                
-
-
 
             }
         } catch (NoSuchAlgorithmException e) {
