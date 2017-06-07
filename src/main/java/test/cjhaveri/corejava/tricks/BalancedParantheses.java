@@ -18,8 +18,6 @@ public class BalancedParantheses {
         Scanner in = new Scanner(System.in);
         int totalLines = in.nextInt();
 
-        Stack<String> parantheses = new Stack<>();
-
         //loop on the number of lines
         for (int i = 0; i < totalLines; i++) {
             //next line
