@@ -39,25 +39,20 @@ public class QuickSort extends SortBase {
 		Integer[] prePivotNumberArray = quickSort(prePivotNumber.toArray(new Integer[0]));
 		Integer[] postPivotNumberArray = quickSort(postPivotNumber.toArray(new Integer[0]));
 
-		// 4. combine
-		Integer[] completelySortedArray = new Integer[numbers.length];
-		//track how the array is being combined
-		int i = 0;
-		// 4a. combine for pre-array
-		for (int j = 0; prePivotNumberArray != null && j < prePivotNumberArray.length; j++) {
-			completelySortedArray[i] = prePivotNumberArray[j];
-			i++;
+
+		//4. combine
+		int prePivotLength = prePivotNumberArray == null ? 0 : prePivotNumberArray.length;
+		if (prePivotNumberArray != null) {
+			System.arraycopy(prePivotNumberArray, 0, numbers, 0, prePivotLength);
 		}
-		// 4b. combine the pivot index
-		completelySortedArray[i] = pivotNumber;
-		i++;
-		// 4c. combine for post-array
-		for (int j = 0; postPivotNumberArray != null && j < postPivotNumberArray.length; j++) {
-			completelySortedArray[i] = postPivotNumberArray[j];
-			i++;
+		numbers[prePivotLength] = pivotNumber;
+		if (postPivotNumberArray != null) {
+			System.arraycopy(postPivotNumberArray, 0, numbers,  prePivotLength + 1, postPivotNumberArray.length);
 		}
-		
-		//combined array done
-		return completelySortedArray;
+
+		return numbers;
+
 	}
+
+
 }
