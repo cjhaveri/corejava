@@ -36,18 +36,18 @@ public class QuickSort extends SortBase {
 		}
 
 		// 3. recursively sort the array before and after
-		Integer[] prePivotNumberArray = quickSort(prePivotNumber.toArray(new Integer[0]));
-		Integer[] postPivotNumberArray = quickSort(postPivotNumber.toArray(new Integer[0]));
+		Integer[] sortedPrePivotNumbers = quickSort(prePivotNumber.toArray(new Integer[0]));
+		Integer[] sortedPostPivotNumbers = quickSort(postPivotNumber.toArray(new Integer[0]));
 
 
 		//4. combine
-		int prePivotLength = prePivotNumberArray == null ? 0 : prePivotNumberArray.length;
-		if (prePivotNumberArray != null) {
-			System.arraycopy(prePivotNumberArray, 0, numbers, 0, prePivotLength);
+		int prePivotLength = sortedPrePivotNumbers == null ? 0 : sortedPrePivotNumbers.length;
+		if (sortedPrePivotNumbers != null) {
+			System.arraycopy(sortedPrePivotNumbers, 0, numbers, 0, prePivotLength);
 		}
 		numbers[prePivotLength] = pivotNumber;
-		if (postPivotNumberArray != null) {
-			System.arraycopy(postPivotNumberArray, 0, numbers,  prePivotLength + 1, postPivotNumberArray.length);
+		if (sortedPostPivotNumbers != null) {
+			System.arraycopy(sortedPostPivotNumbers, 0, numbers,  prePivotLength + 1, sortedPostPivotNumbers.length);
 		}
 
 		return numbers;

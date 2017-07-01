@@ -16,6 +16,7 @@ public class QuickSortTest extends SortTestBase {
 		Integer[] sortedNumbers = qs.quickSort(numbers);
 		Arrays.sort(numbers);
 		Assert.assertEquals(Arrays.toString(sortedNumbers), Arrays.toString(numbers));
+		System.out.println("sorted numbers:" + Arrays.toString(sortedNumbers));
 	}
 
 	@Test
